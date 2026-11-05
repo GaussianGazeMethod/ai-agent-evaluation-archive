@@ -1,0 +1,12 @@
+metric,unit,q_learning,glm5,note
+training_episodes,episodes,5000,20,LLM 少 250 倍
+training_time_s,seconds,2.39,6960.32,RL 快约 2910 倍
+training_win_rate,fraction,0.0002,1.0,1/5000 对 20/20
+training_avg_reward,points,15.2,239.35,
+training_avg_steps,steps,50.0,15.2,
+eval_episodes,episodes,100,10,样本量不对称
+eval_win_rate,fraction,0.0,0.3,0/100 对 3/10
+eval_avg_reward,points,-44.0,86.1,
+eval_avg_steps,steps,50.0,39.0,
+api_calls,count,,304,仅 GLM-5 记录
+tokens,count,,703845,仅 GLM-5 记录

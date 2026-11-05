@@ -1,0 +1,5 @@
+layer,config,passed,scored,not_scored,total,avg_reward_scored,chunks_retrieved,total_minutes
+layer1,no_retrieval_baseline,18,20,0,20,0.943,0,21.5
+layer1,with_retrieval,20,20,0,20,0.985,74,21.5
+layer2,with_retrieval,19,19,1,20,0.854,137,33.8
+layer3,with_retrieval,9,16,4,20,0.566,209,43.9

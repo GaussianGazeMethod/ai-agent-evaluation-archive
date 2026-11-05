@@ -1,0 +1,7 @@
+strategy,outcome,tool_calls,overflow_count,wall_time_s,total_tokens,compression_pct,recall
+no_compression,failed_round_5,11,1,300,132989,109.0,~5/11
+non_context_aware_individual,failed_round_15_rate_limit,27,4,1800,180742,11.3,~9/11
+non_context_aware_combined,succeeded,29,4,3087,213261,22.5,11/11
+context_aware_summary,succeeded,26,0,5564,116114,9.0,11/11
+context_aware_with_citations,succeeded,20,0,1830,111634,17.6,11/11
+windowed_context,succeeded,16,2,1171,165865,107.9,11/11

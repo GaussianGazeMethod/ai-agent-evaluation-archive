@@ -1,0 +1,6 @@
+suite,mode,raw_verdict_pass,content_verdict_pass,elapsed_s,iterations,note
+pdf_v2,full,1,1,33.72,5,完整工具轨迹
+pdf_v2,no_history,1,1,28.02,4,未真正消融
+pdf_v2,no_reasoning,1,0,31.17,4,空操作
+pdf_v2,no_tool_calls,1,0,29.94,1,编造报表
+pdf_v2,no_tool_results,1,0,14.25,3,工具结果被隐藏

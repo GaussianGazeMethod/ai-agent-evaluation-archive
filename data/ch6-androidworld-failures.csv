@@ -1,0 +1,5 @@
+reason,count_in_failed_log,count_in_full_log,note
+reached_max_steps,28,33,失败日志子集与全量日志相差 5 次
+declared_infeasible,3,,日志出现 infeasible
+validation_failed,21,,Agent 自报完成但数据库校验不通过
+total,52,,失败日志记录的 52 次失败

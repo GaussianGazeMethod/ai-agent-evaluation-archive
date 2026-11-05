@@ -1,0 +1,11 @@
+metric,agentic,non_agentic
+success_rate_framework,1.00,1.00
+avg_elapsed_s,271.23,33.39
+total_elapsed_s,4068.4,500.9
+keyword_recall_pct,83.33,36.67
+analysis_point_recall_pct,0.00,40.00
+cases_with_citation,9,9
+avg_answer_chars,514.9,306.6
+easy_avg_elapsed_s,64.19,28.32
+medium_avg_elapsed_s,466.40,33.51
+hard_avg_elapsed_s,443.97,40.41

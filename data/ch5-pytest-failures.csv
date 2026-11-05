@@ -1,0 +1,7 @@
+test_case,root_cause
+test_bash_output_tool.py::test_retrieve_background_output,后台进程输出在测试时序内尚未可读
+test_bash_output_tool.py::test_nonexistent_bash_id,错误消息措辞与断言不匹配
+test_bash_tool.py::test_timeout_parameter,超时场景下 stdout 捕获为空
+test_grep_tool.py::test_invalid_regex,工具层返回结构化 error 而非抛出异常，测试期望 success=False
+test_integration.py::test_metadata_consistency,integration 链路中 _metadata 字段缺失
+test_read_tool.py::test_binary_file_detection,纯二进制内容未被自动拦截

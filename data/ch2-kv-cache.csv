@@ -1,0 +1,7 @@
+mode,cached_tokens,wall_time_s,delta_wall_time_pct,iterations,note
+correct,403456,210.4,0.0,17,基线
+text_format,171776,244.1,16.0,,历史转纯文本
+shuffled_tools,155136,241.8,14.9,,每轮打乱工具顺序
+dynamic_profile,9728,415.7,97.5,,每轮插入变化的用户积分
+dynamic_system,5120,340.9,62.0,,system prompt 追加时间戳
+sliding_window,1536,21.4,-89.8,3,速度假象：任务未完成

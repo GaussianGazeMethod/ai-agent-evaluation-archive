@@ -1,0 +1,5 @@
+server,tools,discovered_by_event_agent,note
+collaboration-tools,37,1,浏览器 5 + HITL 4 + 通知 4 + 定时器 5 + 棋类 9 + Excel 7 + intelligence 3
+execution-tools,6,1,三层安全机制定向验证通过
+perception-tools,50,1,零外部 Key，天气返回真实数据
+total,93,1,README 旧数字为 42（18+6+18）

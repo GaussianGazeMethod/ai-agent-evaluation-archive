@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="820" viewBox="0 0 1200 820"
+     font-family="'PingFang SC','Hiragino Sans GB','Noto Sans CJK SC','Arial Unicode MS',sans-serif">
+  <rect width="1200" height="820" fill="#FFFFFF"/>
+
+  <text x="40" y="56" font-size="34" font-weight="700" fill="#202124">六章评测地图 / Evaluation Map</text>
+  <text x="40" y="86" font-size="16" fill="#5F6368">25 条有实测数据的实验条目，覆盖 Agent 从基础循环到基准评测的六个层面。数字均回读自结果文件。</text>
+
+  <!-- 递进说明 -->
+  <rect x="40" y="104" width="500" height="30" rx="15" fill="#F1F3F4"/>
+  <text x="56" y="124" font-size="14" fill="#3C4043">递进关系：基础循环 → 上下文 → 检索记忆 → 工具系统 → 编码 Agent → 基准评测</text>
+
+  <!-- ========== 第一行 ========== -->
+  <!-- CH1 -->
+  <g>
+    <rect x="40" y="156" width="360" height="290" rx="14" fill="#FFFFFF" stroke="#E8EAED" stroke-width="1.5"/>
+    <rect x="40" y="156" width="360" height="6" rx="3" fill="#2F6BFF"/>
+    <rect x="64" y="184" width="62" height="26" rx="13" fill="#E8F0FF"/>
+    <text x="95" y="203" font-size="14" font-weight="700" fill="#2F6BFF" text-anchor="middle">CH1</text>
+    <text x="64" y="244" font-size="24" font-weight="700" fill="#202124">Agent 基础</text>
+    <text x="64" y="268" font-size="14" fill="#80868B">Agent Foundations · 4 组实验</text>
+    <text x="64" y="322" font-size="30" font-weight="700" fill="#202124">86.7% → 53.3%</text>
+    <text x="64" y="346" font-size="14" fill="#5F6368">协议判定 与 内容校验的成功率差距</text>
+    <text x="64" y="372" font-size="14" fill="#5F6368">5 组假成功；训练 100% → 评估 30%</text>
+    <rect x="64" y="392" width="104" height="28" rx="14" fill="#E6F4EA"/>
+    <text x="116" y="411" font-size="13" fill="#137333" text-anchor="middle">证据强度 高</text>
+  </g>
+
+  <!-- CH2 -->
+  <g>
+    <rect x="420" y="156" width="360" height="290" rx="14" fill="#FFFFFF" stroke="#E8EAED" stroke-width="1.5"/>
+    <rect x="420" y="156" width="360" height="6" rx="3" fill="#12A594"/>
+    <rect x="444" y="184" width="62" height="26" rx="13" fill="#E0F2F1"/>
+    <text x="475" y="203" font-size="14" font-weight="700" fill="#0B7A6B" text-anchor="middle">CH2</text>
+    <text x="444" y="244" font-size="24" font-weight="700" fill="#202124">上下文工程</text>
+    <text x="444" y="268" font-size="14" fill="#80868B">Context Engineering · 4 组实验</text>
+    <text x="444" y="322" font-size="30" font-weight="700" fill="#202124">40.3 万 → 5 千</text>
+    <text x="444" y="346" font-size="14" fill="#5F6368">稳定前缀 与 动态前缀的缓存 token</text>
+    <text x="444" y="372" font-size="14" fill="#5F6368">不压缩第 5 轮溢出；4 策略查全 11/11</text>
+    <rect x="444" y="392" width="150" height="28" rx="14" fill="#FFF4E5"/>
+    <text x="519" y="411" font-size="13" fill="#B26A00" text-anchor="middle">证据强度 中 ~ 中高</text>
+  </g>
+
+  <!-- CH3 -->
+  <g>
+    <rect x="800" y="156" width="360" height="290" rx="14" fill="#FFFFFF" stroke="#E8EAED" stroke-width="1.5"/>
+    <rect x="800" y="156" width="360" height="6" rx="3" fill="#7C5CFF"/>
+    <rect x="824" y="184" width="62" height="26" rx="13" fill="#EFEBFF"/>
+    <text x="855" y="203" font-size="14" font-weight="700" fill="#6B4AE0" text-anchor="middle">CH3</text>
+    <text x="824" y="244" font-size="24" font-weight="700" fill="#202124">检索与用户记忆</text>
+    <text x="824" y="268" font-size="14" fill="#80868B">Retrieval and Memory · 6 组实验</text>
+    <text x="824" y="322" font-size="30" font-weight="700" fill="#202124">100% → 45%</text>
+    <text x="824" y="346" font-size="14" fill="#5F6368">记忆评测 layer1 → layer3 的通过率</text>
+    <text x="824" y="372" font-size="14" fill="#5F6368">多轮检索换来召回，代价 1.5~8 倍延迟</text>
+    <rect x="824" y="392" width="150" height="28" rx="14" fill="#FFF4E5"/>
+    <text x="899" y="411" font-size="13" fill="#B26A00" text-anchor="middle">证据强度 中低 ~ 中</text>
+  </g>
+
+  <!-- ========== 第二行 ========== -->
+  <!-- CH4 -->
+  <g>
+    <rect x="40" y="482" width="360" height="290" rx="14" fill="#FFFFFF" stroke="#E8EAED" stroke-width="1.5"/>
+    <rect x="40" y="482" width="360" height="6" rx="3" fill="#F2A93B"/>
+    <rect x="64" y="510" width="62" height="26" rx="13" fill="#FFF4E5"/>
+    <text x="95" y="529" font-size="14" font-weight="700" fill="#B26A00" text-anchor="middle">CH4</text>
+    <text x="64" y="570" font-size="24" font-weight="700" fill="#202124">Agent 工具系统</text>
+    <text x="64" y="594" font-size="14" fill="#80868B">Tool System · 4 组实验</text>
+    <text x="64" y="648" font-size="30" font-weight="700" fill="#202124">42 → 93</text>
+    <text x="64" y="672" font-size="14" fill="#5F6368">README 文档 与 MCP 实际发现的工具数</text>
+    <text x="64" y="698" font-size="14" fill="#5F6368">三层安全机制定向验证全部触发</text>
+    <rect x="64" y="718" width="104" height="28" rx="14" fill="#E6F4EA"/>
+    <text x="116" y="737" font-size="13" fill="#137333" text-anchor="middle">证据强度 高</text>
+  </g>
+
+  <!-- CH5 -->
+  <g>
+    <rect x="420" y="482" width="360" height="290" rx="14" fill="#FFFFFF" stroke="#E8EAED" stroke-width="1.5"/>
+    <rect x="420" y="482" width="360" height="6" rx="3" fill="#3BA55D"/>
+    <rect x="444" y="510" width="62" height="26" rx="13" fill="#E6F4EA"/>
+    <text x="475" y="529" font-size="14" font-weight="700" fill="#137333" text-anchor="middle">CH5</text>
+    <text x="444" y="570" font-size="24" font-weight="700" fill="#202124">Coding Agent</text>
+    <text x="444" y="594" font-size="14" fill="#80868B">Coding Agent · 4 项验证</text>
+    <text x="444" y="648" font-size="30" font-weight="700" fill="#202124">117 / 123</text>
+    <text x="444" y="672" font-size="14" fill="#5F6368">pytest 通过率 95.1%，核心工具链全通</text>
+    <text x="444" y="698" font-size="14" fill="#5F6368">最小闭环到多步任务的四个入口跑通</text>
+    <rect x="444" y="718" width="122" height="28" rx="14" fill="#FFF4E5"/>
+    <text x="505" y="737" font-size="13" fill="#B26A00" text-anchor="middle">证据强度 中高</text>
+  </g>
+
+  <!-- CH6 -->
+  <g>
+    <rect x="800" y="482" width="360" height="290" rx="14" fill="#FFFFFF" stroke="#E8EAED" stroke-width="1.5"/>
+    <rect x="800" y="482" width="360" height="6" rx="3" fill="#E5484D"/>
+    <rect x="824" y="510" width="62" height="26" rx="13" fill="#FCE8E6"/>
+    <text x="855" y="529" font-size="14" font-weight="700" fill="#C5221F" text-anchor="middle">CH6</text>
+    <text x="824" y="570" font-size="24" font-weight="700" fill="#202124">评测与基准</text>
+    <text x="824" y="594" font-size="14" fill="#80868B">Benchmarks · 3 组实验</text>
+    <text x="824" y="648" font-size="30" font-weight="700" fill="#202124">88% → 35.3%</text>
+    <text x="824" y="672" font-size="14" fill="#5F6368">AndroidWorld 终止率 与 真实成功率</text>
+    <text x="824" y="698" font-size="14" fill="#5F6368">Elo 合成数据两法排名相关 0.9971</text>
+    <rect x="824" y="718" width="140" height="28" rx="14" fill="#FCE8E6"/>
+    <text x="894" y="737" font-size="13" fill="#C5221F" text-anchor="middle">证据强度 中低</text>
+  </g>
+
+  <text x="40" y="804" font-size="13" fill="#9AA0A6">图：docs/charts/eval-map.svg　｜　详细数据见 docs/data/*.csv，逐章报告见 docs/reports/</text>
+</svg>

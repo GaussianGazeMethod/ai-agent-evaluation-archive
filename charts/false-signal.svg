@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800"
+     font-family="'PingFang SC','Hiragino Sans GB','Noto Sans CJK SC','Arial Unicode MS',sans-serif">
+  <defs>
+    <marker id="arrowGray" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#9AA0A6"/>
+    </marker>
+    <marker id="arrowRed" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#E5484D"/>
+    </marker>
+    <marker id="arrowTeal" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#12A594"/>
+    </marker>
+  </defs>
+
+  <rect width="1200" height="800" fill="#FFFFFF"/>
+  <text x="40" y="54" font-size="32" font-weight="700" fill="#202124">假信号是怎么产生的 / How false success appears</text>
+  <text x="40" y="82" font-size="16" fill="#5F6368">同一份运行结果，换一种判定口径，成功率可以差 10 到 53 个百分点。</text>
+
+  <!-- 执行链路 -->
+  <rect x="56" y="120" width="210" height="92" rx="12" fill="#F8F9FA" stroke="#DADCE0"/>
+  <text x="161" y="156" font-size="18" font-weight="700" fill="#202124" text-anchor="middle">任务</text>
+  <text x="161" y="180" font-size="13" fill="#80868B" text-anchor="middle">Task</text>
+
+  <line x1="266" y1="166" x2="316" y2="166" stroke="#9AA0A6" stroke-width="2" marker-end="url(#arrowGray)"/>
+
+  <rect x="326" y="120" width="300" height="92" rx="12" fill="#F8F9FA" stroke="#DADCE0"/>
+  <text x="476" y="152" font-size="17" font-weight="700" fill="#202124" text-anchor="middle">Agent 执行</text>
+  <text x="476" y="174" font-size="13" fill="#80868B" text-anchor="middle">Execution</text>
+  <text x="476" y="196" font-size="13" fill="#5F6368" text-anchor="middle">工具调用 · 迭代 · 上下文</text>
+
+  <line x1="626" y1="166" x2="676" y2="166" stroke="#9AA0A6" stroke-width="2" marker-end="url(#arrowGray)"/>
+
+  <rect x="686" y="120" width="458" height="92" rx="12" fill="#F8F9FA" stroke="#DADCE0"/>
+  <text x="915" y="152" font-size="17" font-weight="700" fill="#202124" text-anchor="middle">轨迹与日志</text>
+  <text x="915" y="174" font-size="13" fill="#80868B" text-anchor="middle">Trajectory and logs</text>
+  <text x="915" y="196" font-size="13" fill="#5F6368" text-anchor="middle">同一份证据，两种读法</text>
+
+  <!-- 分叉到两种判定 -->
+  <path d="M915,212 L915,248 L340,248 L340,300" fill="none" stroke="#E5484D" stroke-width="2"
+        marker-end="url(#arrowRed)"/>
+  <path d="M915,212 L915,248 L890,248 L890,300" fill="none" stroke="#12A594" stroke-width="2"
+        marker-end="url(#arrowTeal)"/>
+
+  <!-- 协议判定 -->
+  <rect x="120" y="306" width="440" height="126" rx="12" fill="#FCE8E6" stroke="#E5484D" stroke-width="1.5"/>
+  <text x="144" y="338" font-size="19" font-weight="700" fill="#C5221F">协议判定 / Protocol check</text>
+  <text x="144" y="366" font-size="14" fill="#5F6368">只看运行层信号：是否出现 FINAL ANSWER、</text>
+  <text x="144" y="388" font-size="14" fill="#5F6368">是否抛异常、工具是否被调用过。</text>
+  <text x="144" y="414" font-size="14" font-weight="700" fill="#C5221F">判定成本最低，也最容易被伪造。</text>
+
+  <!-- 内容校验 -->
+  <rect x="640" y="306" width="504" height="126" rx="12" fill="#E0F2F1" stroke="#12A594" stroke-width="1.5"/>
+  <text x="664" y="338" font-size="19" font-weight="700" fill="#0B7A6B">内容校验 / Content check</text>
+  <text x="664" y="366" font-size="14" fill="#5F6368">对照 Ground Truth、环境校验器或 LLM Judge，</text>
+  <text x="664" y="388" font-size="14" fill="#5F6368">要求回答非空、关键字段齐全、评分达标。</text>
+  <text x="664" y="414" font-size="14" font-weight="700" fill="#0B7A6B">成本更高，但它决定结论能不能被引用。</text>
+
+  <line x1="340" y1="432" x2="340" y2="474" stroke="#E5484D" stroke-width="2" marker-end="url(#arrowRed)"/>
+  <line x1="890" y1="432" x2="890" y2="474" stroke="#12A594" stroke-width="2" marker-end="url(#arrowTeal)"/>
+
+  <!-- 结果 -->
+  <rect x="120" y="480" width="440" height="96" rx="12" fill="#FFFFFF" stroke="#E5484D" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <text x="144" y="512" font-size="16" fill="#5F6368">写进报告的成功率</text>
+  <text x="144" y="552" font-size="30" font-weight="700" fill="#C5221F">86.7%　·　88%　·　52/60</text>
+
+  <rect x="640" y="480" width="504" height="96" rx="12" fill="#FFFFFF" stroke="#12A594" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <text x="664" y="512" font-size="16" fill="#5F6368">回读结果文件后的成功率</text>
+  <text x="664" y="552" font-size="30" font-weight="700" fill="#0B7A6B">53.3%　·　35.3%　·　48/56</text>
+
+  <!-- 三个实例 -->
+  <rect x="40" y="606" width="1120" height="136" rx="12" fill="#F8F9FA" stroke="#E8EAED"/>
+  <text x="64" y="636" font-size="15" font-weight="700" fill="#202124">三处已核实的差值</text>
+  <text x="64" y="664" font-size="14" fill="#5F6368">CH1 上下文消融：86.7%（13/15）判定为成功，内容校验后只有 53.3%（8/15），其中 5 组是假成功。</text>
+  <text x="64" y="692" font-size="14" fill="#5F6368">CH3 记忆评测：52/60 的 success 里有 4 个空回答未评分，按有效样本是 48/56。</text>
+  <text x="64" y="720" font-size="14" fill="#5F6368">CH6 AndroidWorld：88% 是正常终止率，数据库校验通过的真实成功率是 35.3%（41/116）。</text>
+
+  <text x="40" y="774" font-size="13" fill="#9AA0A6">图：docs/charts/false-signal.svg　｜　统一教训：成功 = 运行层无异常 且 内容层达标</text>
+</svg>
